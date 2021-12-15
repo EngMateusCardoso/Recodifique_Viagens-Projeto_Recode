@@ -2,10 +2,3 @@ footer{
     font-size: small;
     text-align: center;
 }
-
-.box_destino{
-    width: 1500px;
-    border: 2px solid black;
-    margin: 5px;
-    padding: 5px;
-}
