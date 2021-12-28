@@ -27,7 +27,7 @@ Usando os conceitos de projeto MVC e C# .Net, criar um projeto aplicando o CRUD 
 
 1ª Passo:  
 
-Criar as páginas: Home, Destino, Promoções, Contato e as demais de acordo com seu modelo de dados usando HTML e CSS raiz, faça as formatações de acordo com a paleta de cores escolhida; 
+__Criar as páginas: Home, Destino, Promoções, Contato e as demais de acordo com seu modelo de dados usando HTML e CSS raiz, faça as formatações de acordo com a paleta de cores escolhida;__
 
 2º Passo:  
 
