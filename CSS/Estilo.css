@@ -2,3 +2,9 @@ footer{
     font-size: small;
     text-align: center;
 }
+
+.old_value_promo {
+    font-size: small;
+    color: red;
+    text-decoration: line-through;
+}

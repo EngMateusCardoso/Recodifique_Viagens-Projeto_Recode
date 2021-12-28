@@ -13,3 +13,8 @@ function exibir_estes(tipo){
         }
     }
 }
+
+function editarmodal(nome){
+    let destino = document.getElementById('Modal_local');
+    destino.innerHTML = nome;
+}

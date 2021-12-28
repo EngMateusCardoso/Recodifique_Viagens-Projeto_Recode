@@ -48,15 +48,22 @@
                     <li onclick="exibir_estes('Todos')">Todos (12)</li>
                 </ul>
             </div>
-            <!--grid de destinos-->
+            <!--grid de destinos###########################################-->
             <div class="col">
-                <div class="row">
+                <div class="row g-3">
                     <div class="col-md">
-                        <div class="card" style="display: block; width: 175px;" id="Nacional">
-                            <img class = "card-img-top" src="../Imagens/Destinos/Buenos-Aires_01.jpg" alt="Buenos-Aires" width="120px">
+                        <div class="card shadow" style="display: block; width: 175px;" id="Nacional">
+                            <div>
+                                <img class = "card-img-top" src="../Imagens/Destinos/Buenos-Aires_01.jpg" alt="Buenos-Aires" width="120px">
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    -20%
+                                    <span class="visually-hidden">Promoção</span>
+                                </span>
+                            </div>
                             <h5 class="card-title">Buenos Aires</h5>
-                            <p class="card-text">R$ XX,XXX</p>
-                            <button type = "button" class = "btn btn-outline-secondary">Reserve agora!</button>
+                            <p class="old_value_promo mb-0">R$ XX,XXX</p>
+                            <p class="card-text mt-0">R$ XX,XXX</p>
+                            <button type = "button" class = "btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#Modal" onclick="editarmodal( 'Buenos-Aires')">Reserve agora!</button>
                         </div>
                     </div>
                     <div class="col-md">
@@ -152,6 +159,39 @@
             </div>
         </section>
 
+        <!-- Modal -->
+        <div class="modal" id="Modal">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="Modal">Agendar vaga para <p id="Modal_local"></p></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <label class="form-label">Informe seu nome: </label>
+                        <input type="text" class="form-control form-control-sm" >
+                        <label for="exampleInputEmail1" class="form-label">Endereço de e-mail</label>
+                        <input type="email" class="form-control form-control-sm" id="exampleFormControlInput1" placeholder="name@example.com">
+                        <div id="emailHelp" class="form-text">Nunca compartilharemos seu e-mail com mais ninguém</div>
+                        <br>
+                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                            <option selected>Forma de pagamento</option>
+                            <option value="1">Boleto</option>
+                            <option value="2">Cartão de Crédito</option>
+                            <option value="3">Depósito</option>
+                            <option value="3">PIX</option>
+                          </select>                        
+                    </form>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Desistir</button>
+                <button type="button" class="btn btn-primary">Agendar</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!--Fim Modal-->
         <hr>
     </main>
     <!--Fim do Main-->
